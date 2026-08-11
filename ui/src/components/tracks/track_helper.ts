@@ -15,6 +15,18 @@
 import {BigintMath} from '../../base/bigint_math';
 import {type duration, Time, type time, TimeSpan} from '../../base/time';
 import {raf} from '../../core/raf_scheduler';
+import {
+  setTrackShellWidth,
+  TRACK_SHELL_WIDTH,
+} from '../../frontend/css_constants';
+
+export function getTrackShellWidth(): number {
+  return TRACK_SHELL_WIDTH;
+}
+
+export function updateTrackShellWidth(width: number): void {
+  setTrackShellWidth(width);
+}
 
 type FetchTimeline<Data> = (
   start: time,

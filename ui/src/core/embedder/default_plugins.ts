@@ -101,6 +101,7 @@ export const defaultPlugins = [
   'dev.perfetto.TraceMetadata',
   'dev.perfetto.TraceProcessorTrack',
   'dev.perfetto.TrackEvent',
+  'dev.perfetto.TrackIsolation',
   'dev.perfetto.TrackUtils',
   'dev.perfetto.VideoFrames',
   'org.Chromium.OpenTableCommands',
